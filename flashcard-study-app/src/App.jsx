@@ -4,13 +4,13 @@ import "./App.css";
 const starterCards = [
   {
     id: 1,
-    question: "What does HTML stand for?",
-    answer: "HyperText Markup Language",
+    question: "Wha happens when you forget to save your project?",
+    answer: "character development.",
   },
   {
     id: 2,
-    question: "What does CSS control?",
-    answer: "The appearance and layout of a webpage",
+    question: "What is my biggest workout?",
+    answer: "Closing 52 browser tabs.",
   },
   {
     id: 3,
@@ -19,8 +19,13 @@ const starterCards = [
   },
   {
     id: 4,
-    question: "What React hook manages component state?",
-    answer: "useState",
+    question: "How many bugs are acceptable in code?",
+    answer: "Zero...but somehow there are always 57.",
+  },
+  {
+    id: 5,
+    question: "Why did the Wi-Fi break up with me?",
+    answer: "It needed more space.",
   },
 ];
 
