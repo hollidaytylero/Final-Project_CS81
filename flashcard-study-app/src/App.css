@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #e8f0ff, #f7e9ff);
+  color: #20243a;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app {
+  width: min(900px, 92%);
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.header h1 {
+  margin-bottom: 8px;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.header p {
+  color: #5c6075;
+}
+
+.study-section,
+.form-section {
+  margin-bottom: 30px;
+  padding: 28px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 12px 30px rgba(46, 42, 92, 0.12);
+}
+
+.progress {
+  text-align: center;
+  font-weight: bold;
+  color: #646883;
+}
+
+.flashcard {
+  display: flex;
+  width: 100%;
+  min-height: 300px;
+  padding: 30px;
+  border: none;
+  border-radius: 18px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #6246ea, #8e5cff);
+  color: white;
+  box-shadow: 0 10px 24px rgba(98, 70, 234, 0.3);
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.flashcard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 32px rgba(98, 70, 234, 0.38);
+}
+
+.flashcard.flipped {
+  background: linear-gradient(135deg, #087f5b, #20a879);
+  transform: rotateY(360deg);
+}
+
+.card-label {
+  padding: 7px 14px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.18);
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card-content {
+  max-width: 700px;
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.card-instruction {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.controls,
+.deck-controls {
+  display: flex;
+  margin-top: 20px;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.controls button,
+.deck-controls button,
+.empty-message button,
+.reset-button {
+  padding: 11px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #343a40;
+  color: white;
+  font-weight: bold;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.controls button:hover,
+.deck-controls button:hover,
+.empty-message button:hover,
+.reset-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.88;
+}
+
+.deck-controls .delete-button {
+  background-color: #d63343;
+}
+
+.form-section h2 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 13px;
+  border: 2px solid #d9dbea;
+  border-radius: 10px;
+  background-color: #fafaff;
+  color: #20243a;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #6246ea;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.add-button {
+  margin-top: 12px;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  background-color: #6246ea;
+  color: white;
+  font-weight: bold;
+}
+
+.add-button:hover {
+  background-color: #5138d3;
+}
+
+.error-message {
+  margin: 4px 0;
+  color: #c92a2a;
+  font-weight: bold;
+}
+
+.empty-message {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+
+.reset-button {
+  background-color: #6c757d;
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding-top: 20px;
+  }
+
+  .study-section,
+  .form-section {
+    padding: 18px;
+  }
+
+  .flashcard {
+    min-height: 260px;
+    padding: 22px;
+  }
+
+  .controls button,
+  .deck-controls button {
+    flex: 1 1 120px;
+  }
+
+}
