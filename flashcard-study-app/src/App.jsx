@@ -4,29 +4,54 @@ import "./App.css";
 const starterCards = [
   {
     id: 1,
-    question: "Wha happens when you forget to save your project?",
-    answer: "character development.",
+    question: "Why did the JavaScript developer wear glasses?",
+    answer: "Because they couldn't C#."
   },
   {
     id: 2,
-    question: "What is my biggest workout?",
-    answer: "Closing 52 browser tabs.",
+    question: "Why don't skeletons fight each other?",
+    answer: "They don't have the guts."
   },
   {
     id: 3,
-    question: "What is JavaScript used for?",
-    answer: "Adding interactivity and dynamic behavior to webpages",
+    question: "What do you call fake spaghetti?",
+    answer: "An impasta."
   },
   {
     id: 4,
-    question: "How many bugs are acceptable in code?",
-    answer: "Zero...but somehow there are always 57.",
+    question: "Why did the scarecrow win an award?",
+    answer: "Because he was outstanding in his field."
   },
   {
     id: 5,
-    question: "Why did the Wi-Fi break up with me?",
-    answer: "It needed more space.",
+    question: "What happens when you forget to save your project?",
+    answer: "Character development."
   },
+  {
+    id: 6,
+    question: "How do programmers cry?",
+    answer: "console.log('😭');"
+  },
+  {
+    id: 7,
+    question: "What's the fastest way to find a typo?",
+    answer: "Submit the assignment."
+  },
+  {
+    id: 8,
+    question: "Why did the computer go to therapy?",
+    answer: "It had too many unresolved issues."
+  },
+  {
+    id: 9,
+    question: "Why don't eggs tell jokes?",
+    answer: "Because they'd crack each other up."
+  },
+  {
+    id: 10,
+    question: "What's orange and sounds like a parrot?",
+    answer: "A carrot."
+  }
 ];
 
 function App() {
